@@ -1,7 +1,7 @@
 # 📸 Filtering Instagram Hashtags Through Crowdtagging and the HITS Algorithm
 
 ## 📖 Overview
-This project focuses on filtering irrelevant hashtags on :contentReference[oaicite:1]{index=1} using the **:contentReference[oaicite:2]{index=2}** and a **:contentReference[oaicite:3]{index=3} (CNN)**.  
+This project focuses on filtering irrelevant hashtags on Instagram using the **HITS Algorithm** and a **Convolutional Neural Network (CNN)**.  
 The system analyzes crowd-generated hashtags and compares them with the actual image content to identify relevant tags and remove unrelated ones. This improves image search accuracy and creates cleaner datasets for automatic image annotation systems.
 
 ---
@@ -24,22 +24,37 @@ The system analyzes crowd-generated hashtags and compares them with the actual i
 
 ---
 
+## 📦 Requirements
+The project requires the following Python libraries:
+
+- tensorflow  
+- numpy  
+- pandas  
+- networkx  
+- opencv-python  
+- pillow  
+- matplotlib  
+
+Install dependencies using:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
 ## 📂 Project Structure
 ```
-instagram-hashtag-filtering
+project
 │
-├── dataset
-│   ├── images
-│   └── hashtags.csv
-│
-├── hits_algorithm
-│   └── hits.py
-│
-├── cnn_model
-│   └── image_classifier.py
-│
-├── app
-│   └── main.py
+├── Hashtag.py
+├── RCNN.py
+├── build_vocab.py
+├── csv2imageGraphs.py
+├── read_csv.py
+├── write_bipartite.py
+├── test.py
+├── run.bat
 │
 ├── requirements.txt
 └── README.md
@@ -52,7 +67,7 @@ instagram-hashtag-filtering
 2. CNN analyzes the visual content of the image.  
 3. Crowd-generated hashtags are evaluated using the HITS Algorithm.  
 4. The system filters out irrelevant hashtags.  
-5. Only relevant hashtags are retained.  
+5. Only relevant hashtags are retained.
 
 ---
 
@@ -61,13 +76,13 @@ instagram-hashtag-filtering
 Clone the repository:
 
 ```
-git clone https://github.com/your-username/instagram-hashtag-filtering.git
+git clone https://github.com/your-username/project-name.git
 ```
 
 Go to the project folder:
 
 ```
-cd instagram-hashtag-filtering
+cd project-name
 ```
 
 Install required libraries:
@@ -81,8 +96,23 @@ pip install -r requirements.txt
 ## ▶️ Run the Project
 
 ```
-python app/main.py
+python test.py
 ```
+
+Or run using the batch file:
+
+```
+run.bat
+```
+
+---
+
+## 📊 Dataset
+This project uses image graph files and hashtag data for training and evaluation.
+
+⚠️ Dataset is not included in this repository due to size limitations.
+
+Please add the dataset files to the appropriate project directory before running the project.
 
 ---
 
