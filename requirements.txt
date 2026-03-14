@@ -1,0 +1,7 @@
+tensorflow
+numpy
+pandas
+networkx
+opencv-python
+pillow
+matplotlib
