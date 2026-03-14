@@ -1,0 +1,2 @@
+# Filtering-Instagram-Hashtags-Through-Crowdtagging-and-the-HITS-Algorithm
+This project filters irrelevant hashtags on Instagram using the HITS Algorithm and a Convolutional Neural Network. The system analyzes crowd-generated tags and image content to identify relevant hashtags and remove unrelated ones, improving image search accuracy and creating cleaner datasets for automatic image annotation systems.
