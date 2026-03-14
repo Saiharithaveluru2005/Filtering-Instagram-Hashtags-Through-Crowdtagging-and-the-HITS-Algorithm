@@ -75,14 +75,13 @@ project
 
 Clone the repository:
 
-```
-git clone https://github.com/your-username/project-name.git
+```git clone https://github.com/Saiharithaveluru2005/Filtering-Instagram-Hashtags-Through-Crowdtagging-and-the-HITS-Algorithm.git
 ```
 
 Go to the project folder:
 
 ```
-cd project-name
+cd cd Filtering-Instagram-Hashtags-Through-Crowdtagging-and-the-HITS-Algorithm
 ```
 
 Install required libraries:
